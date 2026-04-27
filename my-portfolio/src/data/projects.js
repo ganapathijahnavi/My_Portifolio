@@ -1,5 +1,3 @@
-
-
 import sentimentImg from '../assets/sentiment.png';
 import groceryShopImg from '../assets/grocery_shop.png';
 import crewBotImg from '../assets/crew_bot.png';

@@ -1,4 +1,3 @@
-
 const ProjectCard = ({ project, index }) => {
   return (
     <div className="project-vertical-card">
