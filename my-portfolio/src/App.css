@@ -2,97 +2,106 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.project-grid-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 80px 0;
-}
-
-.project-vertical-card {
-  position: relative;
-  isolation: isolate;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px 20px 28px 20px;
-  color: #181818;
-  transition: transform 0.18s, box-shadow 0.18s;
-  overflow: hidden;
-}
-.project-vertical-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1.5px;
-  background: linear-gradient(135deg, #7c3aed, #22c55e, #06b6d4, #f59e0b, #7c3aed);
-  background-size: 300% 300%;
-  opacity: 0;
-  transform: scale(0.985);
-  transition: opacity 0.22s ease, transform 0.22s ease;
-  pointer-events: none;
-  z-index: 0;
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-.project-vertical-card::after {
-  content: '';
-  position: absolute;
-  inset: -18px;
-  border-radius: inherit;
-  background: radial-gradient(circle at top left, rgba(124, 58, 237, 0.22), transparent 38%), radial-gradient(circle at bottom right, rgba(6, 182, 212, 0.16), transparent 36%);
-  opacity: 0;
-  transition: opacity 0.22s ease;
-  pointer-events: none;
-  z-index: 0;
-}
-.project-vertical-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.22);
-}
-.project-vertical-card:hover::before {
-  opacity: 1;
-  transform: scale(1);
-  animation: projectBorderGlow 2.8s linear infinite;
-}
-.project-vertical-card:hover::after {
-  opacity: 1;
-}
-.project-vertical-thumb {
-  width: 100%;
-  max-width: 320px;
-  height: 180px;
-  margin-bottom: 18px;
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-.project-vertical-thumb squircle-image {
-  width: 100%;
-  height: 100%;
-}
-.project-vertical-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  position: relative;
-  z-index: 1;
-}
-.project-vertical-index {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #181818;
+    /* Force desktop-like layout on mobile */
+    .project-grid-list {
+      grid-template-columns: repeat(3, 1fr) !important;
+      overflow-x: auto;
+      min-width: 900px;
+      gap: 40px;
+      padding: 80px 0;
+    }
+    .project-grid-list::-webkit-scrollbar {
+      height: 8px;
+    }
+    .project-grid-list {
+      scrollbar-width: thin;
+    }
+    .project-vertical-card {
+      min-width: 260px;
+      max-width: 340px;
+      margin: 0 auto;
+      padding: 32px 20px 28px 20px;
+      border-radius: 20px;
+    }
+    .project-vertical-thumb {
+      max-width: 320px;
+      height: 180px;
+    }
+    .project-vertical-title {
+      font-size: 1.35rem;
+    }
+    .project-vertical-stack span {
+      font-size: 0.95rem;
+      padding: 6px 14px;
+    }
+    .project-vertical-link {
+      font-size: 1rem;
+      padding: 10px 24px;
+    }
+    .project-showcase {
+      flex-direction: row;
+      gap: 56px;
+      align-items: center;
+    }
+    .project-showcase-thumb {
+      min-width: 320px;
+      max-width: 700px;
+      height: 320px;
+    }
+    .project-showcase-thumb img {
+      height: 320px;
+      object-fit: cover;
+    }
+    .project-showcase-content {
+      max-width: 600px;
+      min-width: 280px;
+      padding: 0;
+    }
+    .project-showcase-index {
+      font-size: 4rem;
+      left: -60px;
+      top: 0;
+      position: absolute;
+      margin-bottom: 12px;
+    }
+    .project-showcase-title {
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+    }
+    .project-showcase-desc {
+      font-size: 1.15rem;
+      margin-bottom: 18px;
+    }
+    .project-showcase-stack-label {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .project-showcase-stack span {
+      font-size: 1rem;
+      padding: 8px 18px;
+    }
+    .project-showcase-link {
+      font-size: 1.2rem;
+      padding: 12px 32px;
+      margin-top: 8px;
+    }
+    .about-flex {
+      flex-direction: row;
+      gap: 48px;
+      align-items: center;
+    }
+    .about-copy {
+      padding: 32px 30px;
+      border-radius: 30px;
+    }
+    .skills-section {
+      padding: 32px 0;
+    }
+    .footer {
+      font-size: 1rem;
+      padding: 18px 0;
+      text-align: left;
+    }
   opacity: 0.22;
   margin-bottom: 2px;
 }
