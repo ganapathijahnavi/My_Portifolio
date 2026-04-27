@@ -1,3 +1,4 @@
+import profileImg from '../assets/GanapathiJahnaviDurga.jpeg';
 const Contact = () => {
   return (
     <section id="contact" className="section contact">
@@ -19,7 +20,7 @@ const Contact = () => {
           <div className="contact-profile-row">
             <img
               className="contact-avatar"
-              src="https://media.licdn.com/dms/image/v2/D5603AQH-oIWEQ0f0IQ/profile-displayphoto-scale_400_400/B56ZtbIG39K8Ag-/0/1766760412314?e=1776902400&v=beta&t=-u-6myb0kNfsS35ynKvuf8UfG56ANIVmuS0SFakgEz4"
+              src={profileImg}
               alt="Jahnavi Durga Ganapathi"
             />
             <div className="contact-profile-copy">
