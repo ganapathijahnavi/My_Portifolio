@@ -1,3 +1,19 @@
+/* --- Force About section to desktop-like layout on mobile --- */
+@media (max-width: 600px) {
+  .about-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 48px;
+    align-items: flex-start;
+    min-width: 700px;
+    overflow-x: auto;
+    width: 100vw;
+  }
+  .about-copy {
+    min-width: 320px;
+    max-width: 420px;
+  }
+}
 *,
 *::before,
 *::after {
