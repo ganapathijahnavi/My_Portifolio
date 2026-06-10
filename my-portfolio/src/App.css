@@ -292,7 +292,8 @@
 .project-stack-shell:has(#stack-4:checked) .project-overview-item:nth-child(4),
 .project-stack-shell:has(#stack-5:checked) .project-overview-item:nth-child(5),
 .project-stack-shell:has(#stack-6:checked) .project-overview-item:nth-child(6),
-.project-stack-shell:has(#stack-7:checked) .project-overview-item:nth-child(7) {
+.project-stack-shell:has(#stack-7:checked) .project-overview-item:nth-child(7),
+.project-stack-shell:has(#stack-8:checked) .project-overview-item:nth-child(8) {
   background: rgba(255, 215, 124, 0.16);
   border-color: rgba(255, 213, 121, 0.42);
   transform: translateX(2px);
@@ -608,6 +609,22 @@
   --_pointer-event: var(--_7-pointer-event, none);
 }
 
+.project-stack-card:nth-of-type(8) {
+  --bar-a: #ffd8f0;
+  --bar-b: #ffafd8;
+  --bar-ink: #5a2343;
+  --chip-bg: #fff0f7;
+  --chip-border: rgba(130, 45, 93, 0.2);
+  --chip-ink: #7c2f5b;
+  --btn-bg: #8a3564;
+  --_order: var(--_8-order, 0);
+  --_scale: var(--_8-scale, .82);
+  --_opacity: var(--_8-opacity, 0);
+  --_offset: var(--_8-offset, calc(var(--_offset-steps) * -3));
+  --_content-opacity: var(--_8-content-opacity, 0);
+  --_pointer-event: var(--_8-pointer-event, none);
+}
+
 .project-stack-shell:has(#stack-1:checked) {
   --_1-order: 3;
   --_1-scale: 1;
@@ -753,6 +770,29 @@
   --_7-offset: 0rem;
   --_7-content-opacity: 1;
   --_7-pointer-event: auto;
+
+  --_1-order: 2;
+  --_1-scale: calc(1 - var(--_scale-steps));
+  --_1-opacity: calc(1 - var(--_opacity-steps));
+  --_1-offset: calc(var(--_offset-steps) * -1);
+  --_1-content-opacity: 0;
+  --_1-pointer-event: none;
+
+  --_2-order: 1;
+  --_2-scale: calc(1 - (var(--_scale-steps) * 2));
+  --_2-opacity: calc(1 - (var(--_opacity-steps) * 2));
+  --_2-offset: calc(var(--_offset-steps) * -2);
+  --_2-content-opacity: 0;
+  --_2-pointer-event: none;
+}
+
+.project-stack-shell:has(#stack-8:checked) {
+  --_8-order: 3;
+  --_8-scale: 1;
+  --_8-opacity: 1;
+  --_8-offset: 0rem;
+  --_8-content-opacity: 1;
+  --_8-pointer-event: auto;
 
   --_1-order: 2;
   --_1-scale: calc(1 - var(--_scale-steps));

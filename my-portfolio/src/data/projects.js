@@ -5,6 +5,7 @@ import daftImg from '../assets/DAFT.png';
 import carbonCreditImg from '../assets/carbon_credit.png';
 import kolleruImg from '../assets/kolleru.png';
 import faceRecognitionImg from '../assets/FaceRecognition.png';
+import AffiliateImg from '../assets/AffiliateImg.png';
 
 const projects = [
   {
@@ -71,6 +72,15 @@ const projects = [
     link: 'https://ecovault.netlify.app',
     image: carbonCreditImg,
   },
+  {
+    title: 'Affiliate Marketing Website',
+    category: 'Web Development',
+    description:
+    'Built a responsive affiliate marketing website using React, showcasing products with affiliate links. Developed reusable React components and integrated affiliate APIs for dynamic product rendering and seamless user experience.',
+    stack: ['React', 'JavaScript', 'HTML5', 'CSS3'],
+    link: 'https://januverse.netlify.app/',
+    image: AffiliateImg,
+  }
   
 ]
 
