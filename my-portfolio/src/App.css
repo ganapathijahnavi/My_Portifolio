@@ -4171,3 +4171,253 @@ body:has(#theme-toggle:checked) .app::after {
     margin-bottom: 16px;
   }
 }
+
+@media (max-width: 700px) {
+  .app {
+    gap: 48px;
+    padding: 20px 16px 56px;
+  }
+
+  .nav {
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 14px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-cta {
+    padding: 8px 11px;
+    font-size: 0.75rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .hero-copy {
+    transform: none;
+  }
+
+  .hero-copy h1 {
+    padding-left: 16px;
+    font-size: clamp(2.25rem, 11vw, 3.4rem);
+  }
+
+  .hero-copy h1 span {
+    font-size: clamp(1.05rem, 5vw, 1.35rem);
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    margin: 22px 0;
+  }
+
+  .hero-actions .btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-meta {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-art {
+    transform: none;
+  }
+
+  .hero-art > img {
+    width: min(360px, 92%);
+  }
+
+  .creative-card {
+    top: 34%;
+    left: 0;
+    width: 148px;
+    padding: 10px 11px;
+  }
+
+  .floating-card {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .note-board,
+  .note-page {
+    width: min(145px, 100%);
+    height: min(145px, 100vw - 48px);
+  }
+
+  .spark {
+    right: 0;
+    width: 42px;
+    height: 42px;
+  }
+
+  .section-heading {
+    padding-left: 16px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .about-flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .about-copy {
+    width: 100%;
+    padding: 24px 18px;
+    border-radius: 24px;
+  }
+
+  .about-media-stack {
+    width: 100%;
+  }
+
+  .project-stack-shell {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .project-stack-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .project-overview {
+    display: flex;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 8px;
+    scrollbar-width: none;
+  }
+
+  .project-overview::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-overview-item {
+    flex: 0 0 auto;
+    grid-template-columns: 30px auto;
+    min-width: max-content;
+    padding: 8px;
+  }
+
+  .project-stack-stage {
+    min-height: 620px;
+  }
+
+  .project-stack-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .project-stack-media img {
+    min-height: 180px;
+    max-height: 230px;
+  }
+
+  .project-stack-content h3 {
+    font-size: 1.35rem;
+  }
+
+  .project-stack-mascot {
+    display: none;
+  }
+
+  .project-grid-list {
+    gap: 20px;
+    padding: 32px 0;
+  }
+
+  .project-vertical-card {
+    padding: 24px 16px;
+  }
+
+  .internship-card {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .certification-card {
+    flex-basis: min(320px, 86vw);
+    padding: 20px;
+  }
+
+  .leetcode-card,
+  .contact-card,
+  .feedback-card {
+    border-radius: 22px;
+  }
+
+  .contact-card {
+    padding: 22px 18px;
+  }
+
+  .contact-bottom-links {
+    justify-content: flex-start;
+  }
+
+  .contact-bottom-links a {
+    min-height: 42px;
+  }
+
+  .feedback-card {
+    padding: 24px 18px;
+  }
+
+  .tara-quest-header {
+    flex-direction: column;
+  }
+
+  .tara-pause-button {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .app {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 12vw, 2.8rem);
+  }
+
+  .project-stack-stage {
+    min-height: 650px;
+  }
+
+  .contact-badge-row,
+  .contact-bottom-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .contact-bottom-links a {
+    justify-content: center;
+  }
+}
